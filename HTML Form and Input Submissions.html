@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <!-- Form input elements need to go here -->
+            <!-- Inputs are where you INPUT info, like first and last name, phone number, 
+            birth date, etc.-->
+            <input name="email" type="email" placeholder="Email">
+            <input type="number" name="zipCode" placeholder="ZipCode">
+            <input type="tel" name="phone" placeholder="Phone">
+            <!--Notice the attributes and placeholders associated with each input. These 
+            are important!
+                Placeholders give users info as to what that input elements needs(or expects)
+            Without placeholders, you may try to put in a phone number in a input that is 
+            expecting a name, which wouldn't be good!
+                Type attributes tell the browser how to handle that information. Should that
+            input accept text or numeric values? On mobile devices, this may even change which
+            on-screen keyboard is presented to the user.
+                The name attribute keeps track of what information is captured in your form when
+            you submit it.
+                So, keep the context of the inputs within your form in mind when you are creating
+            it.-->  
+
+            <!--You can also create checkboxes and radio inputs in default HTML.-->
+            <!--For example, a checkbox would look something like this:-->
+            <input type="checkbox" name="chk1"> Option 1 is a square checkbox.
+            <input type="checkbox" name="chk1"> Option 2 is also a square checkbox.
+            <!--This would allow you to select as many of these options as you want. You just 
+            need to change the type of the input to the checkbox, and you need some text associated
+            with each input.-->
+            <!--For radio inputs, you can only select ONE of the options available in one radio 
+            group. This means you MUST HAVE the same name attribute in the radio input selections-->
+            <input type="radio" name="radio-group"> Option 3 is a round checkbox.
+            <input type="radio" name="radio-group"> Option 4 is also a round checkbox.
+            
+            <!---->
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Save Something</button>
+            <select name="states" id="">
+                <option value="1">AL</option>
+                <option value="2">GA</option>
+            </select>
+        </form>
+    </main>
+</body>
+</html>
